@@ -1,1 +1,126 @@
 
+body{
+    margin: 0;
+    padding: 0
+
+}
+header {
+    background-color: #DB5461;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.background-image {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
+    grid-column: 2/2;
+    background-size: contain;
+    width: 100%
+}
+nav {
+    background-color: white;
+    position: absolute;
+    top: 20px;
+    right: 20px
+}
+nav a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    float: left;
+    color: #30343F;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+nav a:hover {
+    background-color: #30343F;;
+    color: white;   
+}
+.logo-positioning {
+    position:absolute;
+    top: 40px;
+    left: 70px;
+    padding:0;
+    z-index: 2
+}
+.main-content {
+    position: absolute;
+    bottom: 340px;
+    left: 75px;
+    padding:0;
+    z-index: 2;
+    
+}
+
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: whitesmoke;
+    font-size: 25px;
+}
+strong{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #30343F;
+}
+button {
+    border: 5px;
+    border-color: #30343F;
+    background-color: whitesmoke;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    font-style: bold;
+    color:#30343F;
+    padding: 10px 30px;
+    border-radius: 20px;    
+}
+button:hover {
+    border-color: whitesmoke;
+    background-color: #30343F;
+    color:whitesmoke;
+
+}
+footer {
+    background-color: #30343F;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    grid-template-rows: 100%;
+    bottom: 0;
+}
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: whitesmoke;
+    font-size: 18px;
+}
+h5 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: whitesmoke;
+    font-size: 22px;
+    padding:0;
+
+}
+.fact1-logo {
+    grid-column:2/2;
+    padding:0;
+     
+}
+.fact1-text {
+    grid-column: 3/3;
+    padding:0;
+}
+.fact2-logo {
+    grid-column: 5/5;
+    padding:0;
+   
+}
+.fact2-text {
+    grid-column: 6/6;
+    padding:0;
+}
+.fact3-logo {
+    grid-column:8/8;
+    padding:0;
+    
+}
+.fact3-text {
+    grid-template:9/9;
+    padding:0;
+}
