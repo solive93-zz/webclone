@@ -99,34 +99,28 @@ h5 {
 }
 .fact1-logo {
     grid-column:2/2;
-    grid-row:2/2
     padding:0;
      
 }
 .fact1-text {
     grid-column: 3/3;
-    grid-row:2/2
     padding:0;
 }
 .fact2-logo {
     grid-column: 5/5;
-    grid-row:2/2
     padding:0;
    
 }
 .fact2-text {
     grid-column: 6/6;
-    grid-row:2/2
     padding:0;
 }
 .fact3-logo {
     grid-column:8/8;
-    grid-row:2/2
     padding:0;
     
 }
 .fact3-text {
     grid-template:9/9;
-    grid-row:2/2
     padding:0;
 }
