@@ -16,6 +16,7 @@ header {
     width: 100%
 }
 nav {
+    box-shadow: 0px 6px 12px -6px black;
     background-color: white;
     position: absolute;
     top: 20px;
@@ -60,7 +61,9 @@ strong{
     color: #30343F;
 }
 button {
-    border: 5px;
+    box-shadow: 0px 6px 12px -6px black;
+    background-color: white;
+    border: 3px solid #30343F;
     border-color: #30343F;
     background-color: whitesmoke;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -76,51 +79,87 @@ button:hover {
     color:whitesmoke;
 
 }
-footer {
-    background-color: #30343F;
-    bottom: 0;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
-    grid-template-rows: 20% 60% 20%;
-    bottom: 0;
-}
+
 p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: whitesmoke;
     font-size: 18px;
 }
-h5 {
+
+#footer{
+    grid-template-columns: 33% 33% 34%;
+    grid-template-rows: 100%;
+    display: grid;
+    background-color: #30343F;
+    height: 15vh; 
+}
+p{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: whitesmoke;
-    font-size: 22px;
-    padding:0;
+    margin: 0;
+    margin-top: 1vh;
+}
+.pfooter1{
+    margin-top: 0px;
+    margin-left: -10%;
+    margin-top: 0vh;
+}
+.pfooter2{
+    margin-left: -7%;
+    margin-top: 0vh;
 
 }
-.fact1-logo {
-    grid-column:2/2;
-    padding:0;
-     
+.pfooter3{
+    margin-left: -8%;
+    margin-top: 0vh;
+}    
+
+
+@keyframes breath 
+{
+    0%   { background-size: 130% auto; }
+    50% { background-size: 140% auto; }
+    100% { background-size: 130% auto; }
 }
-.fact1-text {
-    grid-column: 3/3;
-    padding:0;
+
+  
+#icon1{
+    width: 8%;
+    padding: 23px 85px;
 }
-.fact2-logo {
-    grid-column: 5/5;
-    padding:0;
-   
+    
+
+
+#icon2{
+    width: 8%;
+    padding: 23px 85px;
 }
-.fact2-text {
-    grid-column: 6/6;
-    padding:0;
+
+
+#icon3{
+    width: 8%;
+    
+    padding: 23px 85px;
 }
-.fact3-logo {
-    grid-column:8/8;
-    padding:0;
+
+.iconfooter1{
+    color: white;
+    margin-top: -15vh;
+    margin-left: 34%;
+
+
+}
+
+.iconfooter2{
+    color: white;
+    margin-top: -15vh;
+    margin-left: 34%;
     
 }
-.fact3-text {
-    grid-template:9/9;
-    padding:0;
+
+.iconfooter3{
+    color: white;
+    margin-top: -15vh;
+    margin-left: 34%;
+  
 }
+
