@@ -21,7 +21,7 @@ time, mark, audio, video {
 
 body{
     position: static;
-    background-image: url("static/smart-seo/Background_image_edited.png");
+    background-image: url("static\smart-seo\Background image_edited.png");
     background-repeat: no-repeat;
     background-size: 100% 594px;
     font-family: 'Work Sans', sans-serif;
