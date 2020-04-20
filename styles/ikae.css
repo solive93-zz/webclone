@@ -121,6 +121,12 @@ p{
   text-align: left;
 }
 
+.icons {
+  padding-left: 60px;
+}
+
+.icons
+
 .icon{
   padding-bottom: 8px;
 }
@@ -129,7 +135,7 @@ p{
   mask: 100% 880px;
 }
 
-.advantages h4{
+.pros h4{
   padding-bottom: 24px;
 }
 
@@ -141,6 +147,14 @@ p{
 
 .categories{
   margin-top: 100px;
+}
+
+.categories .title {
+  padding: 64px 180px;
+}
+
+.title, .subtitle {
+  font-weight: bold
 }
 
 .col-4{
@@ -177,8 +191,26 @@ p{
   height: 80vh;
 }
 
-
+.dark_mask h3 {
+  z-index: 1;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  margin-top: 50%;
+  font-weight: bold;
+}
 
 .mask_dark {
+  filter: 
+}
 
+#footer{
+  position: relative;
+  bottom:0;
+  padding: 45px 0 45px 0;
+  background-color: #F3F3F3;
+  color: #9B9B9B;
+  letter-spacing: 2px;
+  font-weight: 600;
 }
