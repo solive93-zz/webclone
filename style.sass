@@ -1,0 +1,120 @@
+@import helpers
+
+
+a, p, li
+    font-family: $font-stack
+    color: $primary-color
+
+header
+    height: 20vh
+    padding: 10px
+    display: flex
+    justify-content: space-around
+    align-items: center
+
+    
+    .logo
+        padding: $default-pad
+    
+    nav
+        ul
+            padding: $default-pad
+            li
+                display: inline
+            li::after
+                content: ' / '
+                padding: $default-pad
+            a:hover
+                color: $domain-color
+    
+    .top-right
+        
+        i
+            border: solid 2px
+            padding: $default-pad
+
+i
+    color: $domain-color
+
+.filters
+    padding-right: 6em
+    float: right
+    ul
+        li
+            display: inline
+        li::after
+            content: " | "
+            padding: $default-pad
+        li:hover
+            color: $domain-color
+
+.gallery
+    display: flex
+    flex-wrap: wrap
+    width: 100vw
+    height: 60vh
+    justify-content: space-evenly
+    
+
+div[class*="item-"]
+    width: 400px
+    flex: flex-basis
+    
+    div[class*="item-"]:nth-child(2)
+        width: 25%
+        align-self: stretch
+
+    div[class*="item-"]:nth-child(4)
+        width: 25%
+        align-self: stretch
+
+.item:hover
+    background-color: $domain-color
+    z-index: 2
+    opacity: 0.6
+
+#desk
+    background-image: url("static/throne/desk.jpg")
+
+#bike
+    background-image: url("static/throne/bike.jpg")
+
+#teapot
+    background-image: url("static/throne/teapot.jpg")
+
+#table
+    background-image: url("static/throne/table.jpg")
+
+#vase
+    background-image: url("static/throne/vase.jpg")
+
+#lamp
+    background-image: url("static/throne/lamp.jpg")
+
+#bikerack
+    background-image: url("static/throne/bikerack.jpg")
+
+#speaker
+    background-image: url("static/throne/speaker.jpg")
+
+footer
+    display: flex
+    width: 100vw
+    height: 15wh
+    justify-content: space-between
+    align-items: center
+    
+    .copyright
+        padding-left: 6em
+        p
+            padding: $default-pad
+    
+    nav
+        padding-right: 6em
+        ul
+            li
+                display: inline
+                padding: $default-pad
+                i
+                    padding: $default-pad
+    
