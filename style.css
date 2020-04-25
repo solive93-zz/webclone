@@ -19,7 +19,6 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
@@ -102,78 +101,40 @@ i {
 
 .gallery {
   display: flex;
-  flex-wrap: wrap;
-  width: 100vw;
-  height: 60vh;
-  justify-content: space-evenly;
+  flex-flow: column wrap;
+  height: 50vh;
+  width: 100wv;
 }
-
-div[class*=item-] {
-  width: 400px;
-  flex: flex-basis;
+.gallery .item {
+  flex: 1 1 auto;
+  font-size: 13px;
+  font-weight: bold;
+  color: white;
+  z-indez: 2;
 }
-div[class*=item-] div[class*=item-]:nth-child(2) {
-  width: 25%;
-  align-self: stretch;
+.gallery .item img {
+  object-fit: cover;
+  height: 199px;
+  width: auto;
 }
-div[class*=item-] div[class*=item-]:nth-child(4) {
-  width: 25%;
-  align-self: stretch;
+.gallery .item:nth-child(3n+0) img {
+  height: 419px;
 }
-
-.item:hover {
-  background-color: #e74c3c;
-  z-index: 2;
-  opacity: 0.6;
-}
-
-#desk {
-  background-image: url("static/throne/desk.jpg");
-}
-
-#bike {
-  background-image: url("static/throne/bike.jpg");
-}
-
-#teapot {
-  background-image: url("static/throne/teapot.jpg");
-}
-
-#table {
-  background-image: url("static/throne/table.jpg");
-}
-
-#vase {
-  background-image: url("static/throne/vase.jpg");
-}
-
-#lamp {
-  background-image: url("static/throne/lamp.jpg");
-}
-
-#bikerack {
-  background-image: url("static/throne/bikerack.jpg");
-}
-
-#speaker {
-  background-image: url("static/throne/speaker.jpg");
+.gallery .item:nth-child(5) img, .gallery .item:nth-child(6) img {
+  width: 199px;
 }
 
 footer {
+  box-sizing: border-box;
   display: flex;
   width: 100vw;
   height: 15wh;
+  padding: 2em 5em;
   justify-content: space-between;
   align-items: center;
 }
-footer .copyright {
-  padding-left: 6em;
-}
 footer .copyright p {
   padding: 5px;
-}
-footer nav {
-  padding-right: 6em;
 }
 footer nav ul li {
   display: inline;

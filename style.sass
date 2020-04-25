@@ -50,69 +50,61 @@ i
 
 .gallery
     display: flex
-    flex-wrap: wrap
-    width: 100vw
-    height: 60vh
-    justify-content: space-evenly
-    
+    flex-flow: column wrap
+    height: 50vh
+    width: 100wv
 
-div[class*="item-"]
-    width: 400px
-    flex: flex-basis
+    .item
+        flex: 1 1 auto
+        
+        p
+        font-size: $small
+        font-weight: bold
+        color: $bg-color
+        z-indez: 2
+            
+        img
+            object-fit: cover
+            height: 199px
+            width: auto
+            
+    .item:nth-child(3n+0)
+        img 
+            height: 419px
     
-    div[class*="item-"]:nth-child(2)
-        width: 25%
+    .item:nth-child(5), .item:nth-child(6)
+        img 
+            width: 199px
+        
+    //.item:nth-child(2), .item:nth-child(4)
         align-self: stretch
 
-    div[class*="item-"]:nth-child(4)
-        width: 25%
-        align-self: stretch
+    //.item:nth-child(3), .item:nth-child(3), .item:nth-child(3)
+        flex-shrink: 1  
 
-.item:hover
-    background-color: $domain-color
-    z-index: 2
-    opacity: 0.6
-
-#desk
-    background-image: url("static/throne/desk.jpg")
-
-#bike
-    background-image: url("static/throne/bike.jpg")
-
-#teapot
-    background-image: url("static/throne/teapot.jpg")
-
-#table
-    background-image: url("static/throne/table.jpg")
-
-#vase
-    background-image: url("static/throne/vase.jpg")
-
-#lamp
-    background-image: url("static/throne/lamp.jpg")
-
-#bikerack
-    background-image: url("static/throne/bikerack.jpg")
-
-#speaker
-    background-image: url("static/throne/speaker.jpg")
+    //.item:hover
+        background-color: $domain-color
+        z-index: 2
+        opacity: 0.6
 
 footer
+    box-sizing: border-box
     display: flex
     width: 100vw
     height: 15wh
+    padding: 2em 5em
     justify-content: space-between
     align-items: center
     
     .copyright
-        padding-left: 6em
+       
         p
             padding: $default-pad
     
     nav
-        padding-right: 6em
         ul
             li
+                
                 display: inline
                 padding: $default-pad
                 i
