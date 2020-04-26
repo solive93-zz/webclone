@@ -106,19 +106,29 @@ i {
   width: 100wv;
 }
 .gallery .item {
+  backgroun-color: red;
+  float: left;
   flex: 1 1 auto;
+}
+.gallery .item p {
   font-size: 13px;
   font-weight: bold;
   color: white;
-  z-indez: 2;
+  z-index: 2;
 }
 .gallery .item img {
-  object-fit: cover;
+  display: block;
   height: 199px;
   width: auto;
 }
+.gallery .item:nth-child(3n+0) {
+  height: 419px;
+}
 .gallery .item:nth-child(3n+0) img {
   height: 419px;
+}
+.gallery .item:nth-child(5), .gallery .item:nth-child(6) {
+  width: 199px;
 }
 .gallery .item:nth-child(5) img, .gallery .item:nth-child(6) img {
   width: 199px;

@@ -55,24 +55,28 @@ i
     width: 100wv
 
     .item
+        backgroun-color: red
+        float: left
         flex: 1 1 auto
         
         p
-        font-size: $small
-        font-weight: bold
-        color: $bg-color
-        z-indez: 2
+            font-size: $small
+            font-weight: bold
+            color: $bg-color
+            z-index: 2
             
         img
-            object-fit: cover
+            display: block
             height: 199px
             width: auto
             
     .item:nth-child(3n+0)
+        height: 419px
         img 
             height: 419px
     
     .item:nth-child(5), .item:nth-child(6)
+        width: 199px
         img 
             width: 199px
         
@@ -87,26 +91,5 @@ i
         z-index: 2
         opacity: 0.6
 
-footer
-    box-sizing: border-box
-    display: flex
-    width: 100vw
-    height: 15wh
-    padding: 2em 5em
-    justify-content: space-between
-    align-items: center
-    
-    .copyright
-       
-        p
-            padding: $default-pad
-    
-    nav
-        ul
-            li
-                
-                display: inline
-                padding: $default-pad
-                i
-                    padding: $default-pad
+@import footer
     
