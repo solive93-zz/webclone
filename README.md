@@ -11,6 +11,6 @@ With time and practice, though, I expect my webclones to be way better.
 1. [Digital Elite](https://solive93.github.io/webclone/digital-elite); First web replica. Getting started with HTML and CSS. I used a clip-path to cut the image into this trapezoid shape.
 2. [Smart SEO](https://solive93.github.io/webclone/smart-seo); In the second replica I just got more familiarized with HTML and CSS.
 3. [Ikae](https://solive93.github.io/webclone/ikae); Fake swedish furniture e-commerce in which I digged deeper in the use of grid system and used media queries for the first time.
-4. [Throne](https://solive93.github.io/webclone/thone); Figuring out how flexbox behaves and getting started with Sass.
+4. [Throne](https://solive93.github.io/webclone/throne); Figuring out how flexbox behaves and getting started with Sass.
 
 ### solive93
