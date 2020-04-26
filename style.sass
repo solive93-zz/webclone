@@ -37,8 +37,9 @@ i
     color: $domain-color
 
 .filters
+    display: flex
+    justify-content: flex-end
     padding-right: 6em
-    float: right
     ul
         li
             display: inline
@@ -50,46 +51,36 @@ i
 
 .gallery
     display: flex
-    flex-flow: column wrap
-    height: 50vh
+    flex-wrap: wrap
     width: 100wv
 
-    .item
-        backgroun-color: red
-        float: left
-        flex: 1 1 auto
-        
-        p
-            font-size: $small
-            font-weight: bold
-            color: $bg-color
-            z-index: 2
-            
-        img
-            display: block
-            height: 199px
-            width: auto
-            
-    .item:nth-child(3n+0)
-        height: 419px
-        img 
-            height: 419px
+    .wide-col, .thin-col
+       
+        .item 
+            flex: 1 1 auto 
+            img
+                height: 150px  
+
+    .wide-col
+        .item
+            img
+                width: 370px
     
-    .item:nth-child(5), .item:nth-child(6)
-        width: 199px
-        img 
-            width: 199px
-        
-    //.item:nth-child(2), .item:nth-child(4)
-        align-self: stretch
+    .wide-col:nth-child(2) 
+        .item
+            img 
+                height: 300px
+    
+    .thin-col
+        .item
+            img
+                width: 160px
+    
+    .thin-col:nth(2)
+        .item
+            img 
+                height: 300px
 
-    //.item:nth-child(3), .item:nth-child(3), .item:nth-child(3)
-        flex-shrink: 1  
-
-    //.item:hover
-        background-color: $domain-color
-        z-index: 2
-        opacity: 0.6
 
 @import footer
     

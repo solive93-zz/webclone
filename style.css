@@ -85,8 +85,9 @@ i {
 }
 
 .filters {
+  display: flex;
+  justify-content: flex-end;
   padding-right: 6em;
-  float: right;
 }
 .filters ul li {
   display: inline;
@@ -101,37 +102,30 @@ i {
 
 .gallery {
   display: flex;
-  flex-flow: column wrap;
-  height: 50vh;
+  flex-flow: row wrap;
   width: 100wv;
+  justify-content: space-between;
 }
-.gallery .item {
-  backgroun-color: red;
-  float: left;
+.gallery .wide-col, .gallery .thin-col {
   flex: 1 1 auto;
 }
-.gallery .item p {
-  font-size: 13px;
-  font-weight: bold;
-  color: white;
-  z-index: 2;
+.gallery .wide-col .item, .gallery .thin-col .item {
+  flex: 1 1 auto;
 }
-.gallery .item img {
-  display: block;
-  height: 199px;
-  width: auto;
+.gallery .wide-col .item img, .gallery .thin-col .item img {
+  height: 150px;
 }
-.gallery .item:nth-child(3n+0) {
-  height: 419px;
+.gallery .wide-col .item img {
+  width: 370px;
 }
-.gallery .item:nth-child(3n+0) img {
-  height: 419px;
+.gallery .wide-col:nth-child(2) .item img {
+  height: 300px;
 }
-.gallery .item:nth-child(5), .gallery .item:nth-child(6) {
-  width: 199px;
+.gallery .thin-col .item img {
+  width: 160px;
 }
-.gallery .item:nth-child(5) img, .gallery .item:nth-child(6) img {
-  width: 199px;
+.gallery .thin-col:nth(2) .item img {
+  height: 300px;
 }
 
 footer {
